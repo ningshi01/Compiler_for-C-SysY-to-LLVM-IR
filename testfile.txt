@@ -1,0 +1,11 @@
+int test;
+int add(int a){
+    return a+1;
+}
+int main(){
+    printf("Hello World\n");
+    test = getint();
+    test = add(test);
+    printf("%d",test);
+    return 0;
+}

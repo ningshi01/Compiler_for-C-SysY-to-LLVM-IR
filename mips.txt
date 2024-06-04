@@ -1,0 +1,73 @@
+.data
+
+
+.text
+
+
+# @test = dso_local global i32 0
+
+
+jal main
+li $v0, 10
+syscall
+
+add:
+Label_unique_2
+
+# %2 = alloca i32
+
+# store i32 %0, i32* %2
+
+# %3 = load i32, i32* %2
+
+# %4 = load i32, i32* %2
+
+# %5 = add i32 %4, 1
+
+# ret i32 %5
+
+
+main:
+Label_unique_3
+
+# call void @putch(i32 72)
+
+# call void @putch(i32 101)
+
+# call void @putch(i32 108)
+
+# call void @putch(i32 108)
+
+# call void @putch(i32 111)
+
+# call void @putch(i32 32)
+
+# call void @putch(i32 87)
+
+# call void @putch(i32 111)
+
+# call void @putch(i32 114)
+
+# call void @putch(i32 108)
+
+# call void @putch(i32 100)
+
+# call void @putch(i32 10)
+
+# %1 = call i32 @getint()
+
+# store i32 %1, i32* @test
+
+# %2 = load i32, i32* @test
+
+# %3 = call i32 @add(i32 %2)
+
+# store i32 %3, i32* @test
+
+# %4 = load i32, i32* @test
+
+# call void @putint(i32 %4)
+
+# ret i32 0
+
+
